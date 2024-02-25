@@ -1,0 +1,279 @@
+/* Nav */
+.navegacion {
+
+  font-family: "LS Lucas Pro Black";
+  background-color: #a2aad1;
+}
+
+.navegacion ul {
+  background-color:#a2aad1;
+}
+
+/* Fuentes tipográficas */
+@font-face {
+  font-family: "LS Lucas Pro Black";
+  src: url(../recursos/fuentes/FSLucasPro-Black.ttf);
+}
+
+@font-face {
+  font-family: "LS Lucas Pro Semi Bd";
+  src: url(../recursos/fuentes/FSLucasPro-SemiBd.ttf);
+}
+
+@font-face {
+  font-family: "LS Lucas Pro Regular";
+  src: url(../recursos/fuentes/FSLucasPro-Regular.ttf);
+}
+
+@font-face {
+  font-family: "LS Lucas Pro Italic";
+  src: url(../recursos/fuentes/FSLucasPro-Italic.ttf);
+}
+
+/* estilos */
+article {
+  margin: 20px;
+  padding: 10px;
+}
+
+h1 {
+  font-family: "LS Lucas Pro Black";
+  text-align: center;
+}
+
+h2 {
+  font-family: "LS Lucas Pro Semi Bd";
+}
+
+h3 {
+  font-family: "LS Lucas Pro Italic";
+}
+
+h4 {
+  font-family: "LS Lucas Pro Italic";
+}
+
+li {
+  font-family: "LS Lucas Pro Regular";
+}
+
+p {
+  font-family: "LS Lucas Pro Regular";
+}
+
+/* ENCABEZADO */
+.encabezado .inicio-sesion{
+  display: flex;
+  text-decoration: underline;
+  align-items: center;
+  flex-direction: row;
+  background-color: #121413;
+  color: rgb(229, 229, 229);
+  justify-content: space-between;
+  
+}
+
+
+.encabezado .inicio-sesion img{
+  height: 60px;
+}
+
+.encabezado .inicio-sesion ul{
+  display: flex;
+  list-style: none;
+}
+
+.encabezado .inicio-sesion ul li{
+  padding: 0 1rem;
+}
+
+.navegacion {
+  display:flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-size: large;
+}
+
+
+.index h1{
+  color:  #304255;
+}
+
+/* BANNER */
+
+.banner{
+  margin: 0;
+}
+
+.banner img{
+  margin: 1rem 0;
+  width: 100vw;
+}
+
+.banner-texto {
+  position:absolute;
+  bottom: 120px;
+  right: 100px;
+  color: white;
+  padding-left: 560px;
+  padding-right: 450px;
+  text-align: center;
+}
+
+/* IMAGENES INDEX */
+
+/* Si se puede solo dentro del block donde tienes el texto por ejemplo un H2 o un P, pones la imagen de background.En el css pones dentro del título o el parrafo, un background image
+
+La otra manera es que hagas una caja, o contenedor, y de background pongas la imagen. Entonces al ser un contenedor podes meter más cosas dentro del mismo. Osea vas a poder meter un párrafo o un titulo por ejemplo*/
+
+.seccion-02 {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(1, 600px);
+  /* grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 50px;
+  grid-auto-flow: row; */
+  grid-template-areas:
+    "imagen-01 imagen-02 imagen-03";
+    max-width: 1500px;
+    margin: auto;
+}
+
+
+  
+  .imagen-01 { 
+    grid-area: imagen-01; 
+    background-image: url('../recursos/cereza-cafe.jpg');
+    background-size: cover;
+    color: white;
+  }
+
+  .imagen-01 :hover{
+    color: #304255;
+    transition: all .3s;
+  }
+  
+
+.imagen-02 { 
+  grid-area: imagen-02; 
+  background-image: url('../recursos/latissima-one.jpg');
+  color: white;
+  background-size: cover;
+}
+
+.imagen-02 :hover{
+  color: #304255;
+  transition: all .3s;
+}
+
+.imagen-03 {
+   grid-area: imagen-03;
+   background-image: url('../recursos/lume-accesorios.png'); 
+   color: white;
+   background-size: cover;
+  }
+
+  .imagen-03 :hover{
+    color: #304255;
+    transition: all .3s;
+  }
+
+.seccion-03 .imagen-04 { 
+
+  max-width: 700px;
+  height: 500px;
+  margin: auto;
+  color: #A2AAD1;
+  
+}
+
+
+
+.seccion-03 .imagen-04 img{
+  max-width: 700px;
+  height: 404px;
+} 
+
+.seccion-03 .imagen-04 :hover{
+  
+  color: #304255;
+  transition: all .3s;
+  background-color: white;
+
+}
+.seccion-03 .imagen-04 p {
+  font-family: "LS Lucas Pro Regular";
+}
+
+/* Pagina Cafe */
+
+.seccion-cafe .cafe-01 img {
+  width: 500px;
+}
+
+.seccion-cafe-02 .cafe-02 img {
+  width: 500px;
+}
+/* Pagina Maquinas */
+.seccion-maquinas .maquinas-01 img {
+  width: 500px;
+}
+
+.seccion-maquinas .maquinas-02 img {
+  width: 400px;
+}
+
+.seccion-maquinas .maquinas-03 img {
+  width: 400px;
+}
+/* Pagina Recetas */
+.seccion-recetas .recetas-02 img {
+  width: 500px;
+}
+
+.seccion-recetas .recetas-03 img {
+  width: 500px;
+}
+/* Pagina Accesorios */
+.seccion-accesorios .accesorios-01 img {
+  width: 500px;
+}
+
+.seccion-accesorios .accesorios-02 img {
+  width: 400px;
+}
+/* Pagina Tokyo Matcha */
+.seccion-tokyo .tokyo-01 img {
+  width: 600px;
+}
+
+.seccion-tokyo-02 .tokyo-01 img {
+  width: 400px;
+}
+
+
+/* RESPONSIVEE */
+/* mobile last */
+
+@media (max-width: 550px){
+
+  /* .banner{
+    margin: 0;
+  }
+  
+  .banner img{
+    margin: 1rem 0;
+    width: 100vw;
+  } */
+  
+  .banner-texto {
+    position:absolute;
+   bottom: 250px;
+    right: 10px;
+    color: white;
+    padding-left: 50px;
+    padding-right: 20px;
+    text-align: center;
+  }
+}
