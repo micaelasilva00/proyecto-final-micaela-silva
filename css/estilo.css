@@ -205,9 +205,22 @@ La otra manera es que hagas una caja, o contenedor, y de background pongas la im
 
 /* ---FOOTER---- */
 .footer{
-  background-color: #E6E6E6;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  background-color: #121413;
+  color: white;
+  margin: auto;
+  align-items: center;
 }
 
+.footer-texto{
+padding: 20px;
+}
+
+.footer-texto img{
+  width: 150px;
+}
 
 /* ------------------PAGINA CAFÉ----------------- */
 /* ------------------PAGINA CAFÉ----------------- */
@@ -227,8 +240,8 @@ La otra manera es que hagas una caja, o contenedor, y de background pongas la im
   margin: 25px 50px;
     width: 630px;
     padding: 10px;
-    border: 5px solid #A2AAD1;
-    border-radius: 10px;
+    border: 3px solid #ccc; 
+    border-radius: 5px;
     background-color: white;
 
 }
@@ -328,21 +341,105 @@ La otra manera es que hagas una caja, o contenedor, y de background pongas la im
   padding: 1rem;
 }
 
-/* Pagina Accesorios */
-.seccion-accesorios .accesorios-01 img {
-  width: 500px;
+
+
+
+
+
+
+
+/* ------------PAGINA ACCESORIOS------------ */
+
+.seccion-accesorios .accesorios-01{
+background-color: #E6E6E6;
+background-image:url(../recursos/fondo-beige.jpg);
+
+background-position: center; /* Centra la imagen horizontalmente */
+height: 500px;
 }
+
+.accesorios-01{
+  text-align: center;
+  margin: 100px;
+}
+
+
+.accesorios-02 {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px 15px;
+  grid-auto-flow: row;
+  grid-template-areas:
+ 
+    "imagen-1 imagen-2 imagen-3 imagen-4 imagen-5";
+
+}
+
+.imagen-1 { grid-area: imagen-1; }
+
+.imagen-2 { grid-area: imagen-2; }
+
+.imagen-3 { grid-area: imagen-3; }
+
+.imagen-4 { grid-area: imagen-4; }
+
+.imagen-5 { grid-area: imagen-5; }
+
+
+
+
+
+.seccion-accesorios .accesorios-01 img {
+  height:100%
+}
+
+
+
 
 .seccion-accesorios .accesorios-02 img {
-  width: 400px;
-}
-/* Pagina Tokyo Matcha */
-.seccion-tokyo .tokyo-01 img {
-  width: 600px;
+  width: 100%;
+
 }
 
-.seccion-tokyo-02 .tokyo-01 img {
+
+
+/* -------------PAGINA TOKYO MATCHA---------------- */
+
+/* -------------PAGINA TOKYO MATCHA---------------- */
+
+/* -------------PAGINA TOKYO MATCHA---------------- */
+
+.tokyo-01{
+  background-image: url(../recursos/Matcha\ latte_495.avif);
+  height: 495px;
+  object-fit: cover;
+  text-align: center;
+  color:white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.tokyo-02{
+  display: flex;
+  justify-content: center;
+}
+
+.tokyo-bloque{
+  padding: 20px; /* Añade un espacio de relleno alrededor de cada bloque de texto */
+  border: 1px solid #ccc; /* Añade un borde alrededor de cada bloque de texto */
+  margin-right: 20px; /* Añade un margen a la derecha para separar los bloques de texto */
+  
+}
+
+
+.seccion-tokyo-02{
+  background-image: url(../recursos/fondo-beige.jpg);
+  text-align: center;
+  
+}
+
+.tokyo-03 img {
   width: 400px;
+  border: 1px solid #ccc;
 }
 
 
