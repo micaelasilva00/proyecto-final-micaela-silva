@@ -129,11 +129,8 @@ La otra manera es que hagas una caja, o contenedor, y de background pongas la im
 
 .seccion-02 {  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+
   grid-template-rows: repeat(1, 600px);
-  /* grid-auto-columns: 1fr;
-  grid-auto-rows: 1fr;
-  gap: 0px 50px;
-  grid-auto-flow: row; */
   grid-template-areas:
     "imagen-01 imagen-02 imagen-03";
     max-width: 1500px;
@@ -206,18 +203,86 @@ La otra manera es que hagas una caja, o contenedor, y de background pongas la im
   font-family: "LS Lucas Pro Regular";
 }
 
-/* Pagina Cafe */
+/* ---FOOTER---- */
+.footer{
+  background-color: #E6E6E6;
+}
 
-.seccion-cafe .cafe-01 img {
+
+/* ------------------PAGINA CAFÉ----------------- */
+/* ------------------PAGINA CAFÉ----------------- */
+/* ------------------PAGINA CAFÉ----------------- */
+
+.seccion-cafe{
+  display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E6E6E6;
+}
+
+.cafe-01{
+  margin: 25px 50px;
+    width: 630px;
+    padding: 10px;
+    border: 5px solid #A2AAD1;
+    border-radius: 10px;
+    background-color: white;
+
+}
+
+.cafe-01 h2{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  text-decoration: underline;
+  padding: 1rem 0 0 0;
+  color: #907A8C;
+}
+
+.cafe-01 h3{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 1rem 0 0 0;
+  color: #907A8C;
+}
+
+.texto-cafe p{
+  text-align: center;
+  padding: 1rem 0 0 0;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.cafe-01 img{
   width: 500px;
+  margin: auto;
 }
 
 .seccion-cafe-02 .cafe-02 img {
   width: 500px;
 }
-/* Pagina Maquinas */
+/* --------PAGINA MAQUINAS--------- */
+
+.maquinas-texto{
+  text-align: center;
+  background-color: #E6E6E6;
+}
+
+.carousel-item {
+  font-family: "LS Lucas Pro Semi Bd";
+}
+
+
 .seccion-maquinas .maquinas-01 img {
-  width: 500px;
+  position:relative
+}
+
+.seccion-maquinas .maquinas-01 h2 {
+  text-align: center;
 }
 
 .seccion-maquinas .maquinas-02 img {
@@ -227,14 +292,42 @@ La otra manera es que hagas una caja, o contenedor, y de background pongas la im
 .seccion-maquinas .maquinas-03 img {
   width: 400px;
 }
-/* Pagina Recetas */
-.seccion-recetas .recetas-02 img {
-  width: 500px;
+/* -------------PAGINAS RECETAS------------ */
+
+.recetas{
+  text-align: center;
 }
 
-.seccion-recetas .recetas-03 img {
-  width: 500px;
+.seccion-recetas{
+  display: flex;
+  justify-content: center;
 }
+
+
+.seccion-recetas .recetas-01 img{
+  width: 600px;
+}
+
+.seccion-recetas .recetas-02 img{
+  width: 600px;
+}
+
+
+.carousel-item img {
+  height: 500px;
+  width: 300px;
+  object-fit: cover;
+}
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: white; 
+  padding: 1rem;
+}
+
 /* Pagina Accesorios */
 .seccion-accesorios .accesorios-01 img {
   width: 500px;
@@ -256,7 +349,7 @@ La otra manera es que hagas una caja, o contenedor, y de background pongas la im
 /* RESPONSIVEE */
 /* mobile last */
 
-@media (max-width: 550px){
+@media (max-width: 450px){
 
   /* .banner{
     margin: 0;
@@ -268,12 +361,29 @@ La otra manera es que hagas una caja, o contenedor, y de background pongas la im
   } */
   
   .banner-texto {
-    position:absolute;
-   bottom: 250px;
-    right: 10px;
-    color: white;
-    padding-left: 50px;
-    padding-right: 20px;
-    text-align: center;
+  
+    color: black;
+    padding: 0;
+    margin: auto;
+    text-align:center;
+    flex-direction: column;
+    justify-content: center;
   }
+
+  .banner-texto h2{
+    display: none;
+  }
+
+  .seccion-02{
+    display: block;
+    justify-content: center;
+
+  
+    }
+
+
+
 }
+
+
+
