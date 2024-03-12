@@ -1,0 +1,65 @@
+.seccion-tokyo{
+    text-align: center;
+
+.tokyo-01{
+    position: relative;
+    display: inline-block;
+
+    h1{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        color: white;
+        font-size: 4vw; /* Utiliza vw (viewport width) para hacer el tamaño de fuente relativo al tamaño de la pantalla */
+        text-align: center;
+        width: 90%;
+    }
+
+    h2{
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        color: white;
+        text-align: center;
+        width: 90%;
+    }
+  }
+
+  .pasos{
+    margin: 40px;
+  }
+}
+
+
+  .dos{
+    display: flex;
+    justify-content: center;
+    padding: 2opx;
+    .bloque{
+        margin-top: 150px;
+        border: 1px solid #ccc; /* Añade un borde alrededor de cada bloque de texto */
+        margin-right: 50px;
+  }
+}
+  
+  
+  
+  .seccion-tokyo-02{
+    background-image: url(../recursos/fondo-beige.jpg);
+    text-align: center;
+
+    .tokyo-03 img {
+        width: 400px;
+        border: 1px solid #ccc;
+      }
+    
+  }
+
+  .seccion-tokyo-03{
+    margin: 100px;
+  }
+  

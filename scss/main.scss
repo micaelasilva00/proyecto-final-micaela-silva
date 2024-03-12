@@ -1,0 +1,17 @@
+// LAS VARIABLES VAN SIEMPRE AL COMIENZO
+
+// UTILIDADES
+@import './utilidades/variables';
+@import './utilidades/reseteo';
+@import './utilidades/extend';
+@import './utilidades/animaciones';
+
+// SECCIONES
+@import './secciones-sc/header';
+@import './secciones-sc/contenido-index';
+@import './secciones-sc/footer';
+@import './secciones-sc/contenido-cafe';
+@import './secciones-sc/contenido-maquinas';
+@import './secciones-sc/contenido.recetas';
+@import './secciones-sc/contenido-accesorios';
+@import './secciones-sc/contenido-tokyo';

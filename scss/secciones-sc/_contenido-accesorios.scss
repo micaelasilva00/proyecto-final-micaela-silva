@@ -1,0 +1,44 @@
+.seccion-accesorios{
+    .accesorios-01{
+        background-color: $fondo-casiblanco;
+        background-image:url(../recursos/fondo-beige.jpg);
+        
+        background-position: center; 
+        height: 500px;
+        text-align: center;
+        margin: 100px;
+
+        img {
+            height:100%
+          }
+        }
+        
+        
+        .accesorios-02 {  
+                 img {
+                     width: 100%;
+                    }
+         display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+          grid-template-rows: 1fr;
+          gap: 10px 15px;
+          grid-auto-flow: row;
+          grid-template-areas:
+         
+            "imagen-1 imagen-2 imagen-3 imagen-4 imagen-5";
+        
+        }
+        
+        .imagen-1 { grid-area: imagen-1; }
+        
+        .imagen-2 { grid-area: imagen-2; }
+        
+        .imagen-3 { grid-area: imagen-3; }
+        
+        .imagen-4 { grid-area: imagen-4; }
+        
+        .imagen-5 { grid-area: imagen-5; }
+
+} 
+    
+    

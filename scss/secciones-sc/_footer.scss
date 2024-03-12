@@ -1,0 +1,17 @@
+footer{
+    display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  background-color: #121413;
+  color: white;
+  margin: auto;
+  align-items: center;
+
+  div{
+    padding: 20px;
+
+    img{
+        width: 150px;
+    }
+  }
+}

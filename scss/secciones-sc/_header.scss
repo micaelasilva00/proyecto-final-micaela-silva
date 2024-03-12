@@ -1,0 +1,39 @@
+/* ENCABEZADO */
+.encabezado{
+    background-color: $celeste;
+    color: $fondo-casiblanco;
+    
+
+    .inicio-sesion{
+    display: flex;
+    text-decoration: underline;
+    align-items: center;
+    flex-direction: row;
+    background-color: $casinegro;
+    color: $blanco;
+    justify-content: space-between;
+
+    a{
+        img{
+        height: 60px;
+      }
+    }
+
+      ul{
+        display: flex;
+        list-style: none;
+        li{
+            padding: 0 1rem;
+          }
+      }
+
+    }
+    
+    .navegacion{
+        display:flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        font-size: large;
+      }
+  }

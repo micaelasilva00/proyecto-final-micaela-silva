@@ -1,0 +1,104 @@
+.index{
+
+    h1{
+        font-family: $fuente1;
+        text-align: center;
+    }
+
+    .banner{
+        margin: 0;
+        img{
+            margin: 1rem 0;
+            width: 100vw;
+        }
+
+        div{
+            font-family: $fuente4;
+            position:absolute;
+             bottom: 120px;
+             right: 100px;
+             color: $fondo-casiblanco;
+             padding-left: 560px;
+             padding-right: 450px;
+             text-align: center;
+        }
+    }
+
+    .seccion-02{
+
+        display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-template-rows: repeat(1, 600px);
+         grid-template-areas:
+         "imagen-01 imagen-02 imagen-03";
+         max-width: 1500px;
+         margin: auto;
+
+
+         article{ 
+            grid-area: imagen-01; 
+            background-image: url('../recursos/cereza-cafe.jpg');
+            background-size: cover;
+            color: $blanco;
+
+            :hover{
+                color: $azul;
+                transition: all .3s;
+              }
+          }
+        
+          
+        
+        .imagen-02 { 
+          grid-area: imagen-02; 
+          background-image: url('../recursos/latissima-one.jpg');
+          color: white;
+          background-size: cover;
+
+          :hover{
+            color: #304255;
+            transition: all .3s;
+          }
+        }
+        
+        .imagen-03 {
+           grid-area: imagen-03;
+           background-image: url('../recursos/lume-accesorios.png'); 
+           color: white;
+           background-size: cover;
+
+           :hover{
+            color: #304255;
+            transition: all .3s;
+          }
+          }
+        
+
+    }
+
+    .seccion-03{
+        max-width: 700px;
+        margin: auto;
+        color: $celeste;
+        padding: 100px;
+
+        p{
+            font-family: $fuente3;
+        }
+
+        img{
+            max-width: 700px;
+            
+            
+
+            :hover{
+  
+                color: $azul;
+                transition: all .3s;
+                background-color: $blanco;}
+
+            
+        }
+    }
+}
+
