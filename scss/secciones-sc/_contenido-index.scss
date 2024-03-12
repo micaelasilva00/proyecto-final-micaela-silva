@@ -102,3 +102,29 @@
     }
 }
 
+
+
+
+@media (max-width: 450px){
+    
+    .banner-texto {
+    
+      color: black;
+      padding: 0;
+      margin: auto;
+      text-align:center;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .banner-texto h2{
+      display: none;
+    }
+  
+    .seccion-02{
+      display: block;
+      justify-content: center;
+    }
+  
+  
+  }

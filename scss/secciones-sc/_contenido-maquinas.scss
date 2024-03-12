@@ -1,7 +1,7 @@
 .seccion-maquinas{
     .maquinas-texto{
         text-align: center;
-        background-color: $fondo-casiblanco;
+        @extend %extend-estilo
       }
       
       .maquinas-01{
