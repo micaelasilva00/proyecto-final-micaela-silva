@@ -21,6 +21,18 @@
   box-sizing: border-box;
   font-family: "LS Lucas Pro Semi Bd"; }
 
+.seccion-maquinas .maquinas-texto {
+  background-color: #E6E6E6;
+  color: white; }
+
+@keyframes mover {
+  0% {
+    transform: translateX(0); }
+  50% {
+    transform: translateX(50px); }
+  100% {
+    transform: translateX(0); } }
+
 /* ENCABEZADO */
 .encabezado {
   background-color: #A2AAD1;
@@ -112,6 +124,20 @@
       transition: all .3s;
       background-color: white; }
 
+@media (max-width: 450px) {
+  .banner-texto {
+    color: black;
+    padding: 0;
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center; }
+  .banner-texto h2 {
+    display: none; }
+  .seccion-02 {
+    display: block;
+    justify-content: center; } }
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -146,6 +172,10 @@ footer {
   .cafe-01 img {
     width: 500px;
     margin: auto; }
+  .cafe-01 iframe {
+    width: 100px;
+    height: 100px;
+    animation: mover 2s ease-in-out infinite; }
 
 p {
   text-align: center;
@@ -194,8 +224,7 @@ p {
       color: #A2AAD1; }
 
 .seccion-maquinas .maquinas-texto {
-  text-align: center;
-  background-color: #E6E6E6; }
+  text-align: center; }
 
 .seccion-maquinas .maquinas-01 {
   text-align: center;
